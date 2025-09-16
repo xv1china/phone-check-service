@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ka" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ჩეკფონი - ტელეფონის შემოწმება</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="#hero">
+        <img src="images/ლოგო.png" width="70px" alt="">
+      </a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero">მთავარი</a>
+      <a href="#packages">სერვიზი</a>
+      <a href="#contact">კონტაქტი</a>
+    </nav>
+    <div class="controls">
+      <button id="themeToggle" class="theme-toggle">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="burger-menu" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">თუ გსურს ტელეფონის დეტალური შემოწმება</h1>
+      <p class="hero-subtitle">ჩვენს სპეციალისტებს შეგიძლია ენდო სრული სერვისისთვის</p>
+      <!-- Honeypot field for bot protection (hidden) -->
+      <input type="text" name="website" style="display: none;" tabindex="-1" autocomplete="off">
+      <a href="#packages" class="btn-primary">
+        <span>გამოიძახე სპეციალისტი</span>
+      </a>
+    </div>
+    <div class="hero-decoration"></div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="packages">
+    <div class="container">
+      <h2 class="section-title">ტელეფონის შემოწმება 📱</h2>
+      <div class="packages-grid">
+        <div class="package-card">
+          <div class="package-header">
+            <h3>სტანდარტი</h3>
+            <div class="price">100 <span>₾</span></div>
+          </div>
+          <ul class="features">
+            <li>ძირითადი შემოწმება</li>
+            <li>სწრაფი ვიზიტი</li>
+            <li>ბაზისური გარანტია</li>
+
+          </ul>
+
+          <a href="#contact" class="btn-secondary">აირჩიე პაკეტი</a>
+
+
+          <!-- <div>
+            <input type="checkbox" id="serviceInfoStandard" class="info-checkbox">
+            <label for="serviceInfoStandard">მეტი ინფორმაცია</label>
+          </div> -->
+
+        </div>
+
+        <div class="package-card featured">
+          <div class="featured-badge">პოპულარული</div>
+          <div class="package-header">
+            <h3>პრემიუმი</h3>
+            <div class="price">150 <span>₾</span></div>
+          </div>
+          <ul class="features">
+            <li>სიღრმისეული შემოწმება</li>
+            <li>მოკლე ვადები</li>
+            <li>პროფესიონალი გუნდი</li>
+          </ul>
+          <a href="#contact" class="btn-primary">აირჩიე პაკეტი</a>
+        </div>
+
+        <div class="package-card">
+          <div class="package-header">
+            <h3>ლუქსი</h3>
+            <div class="price">200 <span>₾</span></div>
+          </div>
+          <ul class="features">
+            <li>სრული დიაგნოსტიკა</li>
+            <li>პირდაპირი ექსპერტის ვიზიტი</li>
+            <li>გარანტირებული მომსახურება</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">აირჩიე პაკეტი</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="section-title">დაგეხმარებით ტელეფონის ყიდვაში 📱</h2>
+      <div class="packages-grid">
+        <div class="package-card">
+          <div class="package-header">
+            <h3>სტანდარტი</h3>
+            <div class="price">5<span>₾</span></div>
+          </div>
+          <ul class="features">
+            <li>ონლაინ კონსულტაცია</li>
+            <li>რჩევა ექსპერტისგან</li>
+            <li>ინდივიდუალური მიდგომა</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">აირჩიე პაკეტი</a>
+        </div>
+
+        <div class="package-card featured">
+          <div class="featured-badge">პოპულარული</div>
+          <div class="package-header">
+            <h3>პრემიუმი</h3>
+            <div class="price">20<span>₾</span></div>
+          </div>
+          <ul class="features">
+            <li>ექსპერტთან ერთად მაღაზიაში ვიზიტი</li>
+            <li>მოკლე ვადები</li>
+            <li>პროფესიონალი გუნდი</li>
+          </ul>
+          <a href="#contact" class="btn-primary">აირჩიე პაკეტი</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">კონტაქტი</h2>
+      <div class="contact-content">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="სახელი" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="ტელეფონის ნომერი" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="address" placeholder="მისამართი" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="model" placeholder="ტელეფონის მოდელი" required>
+          </div>
+          <select id="city" name="city" required>
+            <option value="ბათუმი">ბათუმი</option>
+            <option value="რუსთავი">რუსთავი</option>
+            <option value="ფოთი">ფოთი</option>
+          </select>
+
+
+          <select id="service" name="service" required>
+            <option value="">აირჩიე სერვისი</option>
+            <option value="phoneCheck">ტელეფონის შემოწმება</option>
+            <option value="phoneBuy">ტელეფონის ყიდვის დახმარება</option>
+          </select>
+
+          <select id="planFirst" name="plan1" style="display:none;">
+            <option value="">აირჩიე პაკეტი</option>
+            <option value="standart">სტანდარტი</option>
+            <option value="premium">პრემიუმი</option>
+          </select>
+
+          <select id="planSecond" name="plan2" style="display:none;">
+            <option value="">აირჩიე პაკეტი</option>
+            <option value="standart">სტანდარტი</option>
+            <option value="premium">პრემიუმი</option>
+            <option value="luxury">ლუქსი</option>
+          </select>
+
+
+
+          <button type="submit" class="btn-primary">
+            <span>გამოიძახე სპეციალისტი</span>
+          </button>
+        </form>
+        <div id="responseMessage" class="response-message"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="container-footer">
+        <p>
+          <i class="fa-brands fa-facebook fa-xl"></i>
+          <i class="fa-brands fa-instagram fa-xl"></i>
+          <i class="fa-brands fa-tiktok fa-xl"></i>
+        </p>
+        <p>დაგვიკავშირდი: <a href="tel:+995557931989" style="text-decoration: none; color: inherit;">
+            +995 557 931 989
+          </a></p>
+      </div>
+
+      <p>© 2025 ჩეკფონი • ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="script/logic1.js"></script>
+</body>
+
+</html>
